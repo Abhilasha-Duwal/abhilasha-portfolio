@@ -1,5 +1,8 @@
-require('dotenv').config();
-const AWS = require('aws-sdk');
+import dotenv from "dotenv";
+import AWS from "aws-sdk";
+
+// Load environment variables
+dotenv.config();
 
 // Configure AWS SES
 AWS.config.update({
@@ -8,9 +11,9 @@ AWS.config.update({
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 });
 
-const ses = new AWS.SES({ apiVersion: '2010-12-01' });
+const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
-const sendEmailController = async (req, res) => {
+export const sendEmailController = async (req, res) => {
   try {
     const { name, email, msg } = req.body;
 
@@ -62,4 +65,3 @@ const sendEmailController = async (req, res) => {
   }
 };
 
-module.exports = { sendEmailController };
