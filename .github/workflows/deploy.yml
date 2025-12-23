@@ -3,7 +3,7 @@ name: Deploy Node.js to AWS Elastic Beanstalk
 on:
   push:
     branches:
-      - main  # Deploy when pushing to main
+      - main
 
 jobs:
   deploy:
@@ -11,18 +11,22 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies (server only)
+        run: |
+          cd server
+          npm install
 
-      - name: Zip source code
-        run: zip -r deploy.zip . -x "*.git*" "*.github*"
+      - name: Zip backend for EB
+        run: |
+          cd server
+          zip -r ../deploy.zip .
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
@@ -32,6 +36,5 @@ jobs:
           application_name: "portfolio backend"
           environment_name: "Portfoliobackend-env"
           region: "us-east-1"
-          version_label: "v-${{ github.run_number }}"
-          bucket_name: "abhilashaportfolio"
-          bucket_key: "deploy.zip"
+          version_label: "v-${{ github.sha }}"
+          deployment_package: deploy.zip
