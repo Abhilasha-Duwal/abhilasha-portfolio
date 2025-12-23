@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // API routes
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.send("Welcome to My MERN Portfolio API!");
 });
 app.use("/api/v1/portfolio", portfolioRouter);
