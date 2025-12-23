@@ -14,7 +14,17 @@ app.get("/", (req, res) => {
 });
 app.use("/api/v1/portfolio", portfolioRouter);
 
-const PORT = process.env.PORT || 3200
+const path = require("path");
+
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, "client/build")));
+
+// React routing — serve index.html for any unknown route
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
+const PORT = process.env.PORT || 3200;
 app.listen(PORT, () =>
   console.log(`Server running on port http://localhost:${PORT}`)
 );
