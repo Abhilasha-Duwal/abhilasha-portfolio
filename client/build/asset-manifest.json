@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36938993.css",
+    "main.js": "/static/js/main.2cfeecf3.js",
+    "static/js/453.eca5f793.chunk.js": "/static/js/453.eca5f793.chunk.js",
+    "static/media/Abhilasha.jpg": "/static/media/Abhilasha.aa455fc829d9c0008f42.jpg",
+    "index.html": "/index.html",
+    "static/media/resume.txt": "/static/media/resume.c526589e76adf104723c.txt",
+    "main.36938993.css.map": "/static/css/main.36938993.css.map",
+    "main.2cfeecf3.js.map": "/static/js/main.2cfeecf3.js.map",
+    "453.eca5f793.chunk.js.map": "/static/js/453.eca5f793.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36938993.css",
+    "static/js/main.2cfeecf3.js"
+  ]
+}
