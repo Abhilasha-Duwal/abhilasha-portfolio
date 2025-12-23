@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, "../client/build")));
 
 // Catch-all for React Router
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 // Use EB port
