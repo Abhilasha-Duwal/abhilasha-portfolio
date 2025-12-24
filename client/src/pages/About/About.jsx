@@ -26,16 +26,16 @@ const About = () => {
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
             <h1>About me</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-              similique sequi velit aperiam totam quis iusto? Deleniti,
-              similique id, sunt porro eos neque ab sit nihil culpa labore
-              perferendis autem rem nostrum asperiores laudantium corrupti atque
-              voluptatibus voluptatum officiis. Soluta alias autem, commodi quos
-              suscipit modi maiores possimus! Placeat maiores assumenda
-              inventore vel doloribus, sunt non. Sequi, corporis harum dolorem
-              numquam, quis nesciunt atque tempore quae? Quibusdam consequatur
-              quidem pariatur hic, ipsam eum beatae labore tempora quis fugit?
-              Vitae, aperiam velit.
+              I am Abhilasha Duwal, a graduate of the Bachelor of Science in
+              Computer Science and Information Technology (BSc. CSIT) program at
+              Tribhuvan University, completed in 2022 AD. My expertise spans
+              both frontend and backend development, encompassing technologies
+              such as HTML5, CSS3, Bootstrap, React, Redux and Redux Toolkit,
+              Node.js, and TypeScript. Proficient in database management with
+              MySQL, PostgreSQL, MongoDB, and SQLite, I specialize in
+              constructing RESTful APIs using frameworks like Express and
+              Fastify. Furthermore, I have acquired proficiency in
+              containerization using Docker.
             </p>
           </div>
         </div>
