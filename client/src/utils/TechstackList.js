@@ -6,19 +6,16 @@ import {
   SiMui,
   SiReact,
   SiTailwindcss,
-  SiFigma,
   SiAdobexd,
   SiAdobephotoshop,
   SiMongodb,
   SiMysql,
+  SiPostgresql,
   SiTypescript,
   SiGithub,
-  SiWordpress,
-  SiFirebase,
   SiDocker,
   SiExpress,
   SiNginx,
-  SiAngular,
 } from "react-icons/si";
 export const TechstackList = [
   {
@@ -103,16 +100,21 @@ export const TechstackList = [
   },
   {
     _id: 17,
+    name: "PostgreSQL ",
+    icon: SiPostgresql,
+  },
+  {
+    _id: 18,
     name: "Git / Github ",
     icon: SiGithub,
   },
   {
-    _id: 18,
+    _id: 19,
     name: "Docker ",
     icon: SiDocker,
   },
   {
-    _id: 19,
+    _id: 20,
     name: "Nginx ",
     icon: SiNginx,
   },

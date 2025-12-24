@@ -1,5 +1,8 @@
 import React from "react";
 import "./Projects.css";
+import ecopanel from "../../assets/images/ecopanel.png";
+import dibtech from "../../assets/images/dibtech.png";
+import dgmarket from "../../assets/images/dgmarket.png";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
@@ -29,8 +32,8 @@ const Projects = () => {
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
                 <img
-                  src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                  alt="project1"
+                  src={dgmarket}
+                  alt="dgMarket Website"
                 />
               </div>
               <div className="card-image-overly m-auto mt-3">
@@ -42,12 +45,12 @@ const Projects = () => {
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
                   <h6 className="text-uppercase">
-                    Techinfoyt Shopping Website
+                    dgMarket Nepal Website
                   </h6>
                 </div>
                 <a
                   className="ad-btn"
-                  href="https://github.com/techinfo-youtube/ecommerce-app-2023"
+                  href="https://www.dgmarket.com.np/"
                 >
                   View
                 </a>
@@ -59,20 +62,24 @@ const Projects = () => {
               <div className="card-image">
                 <span className="card-notify-badge">React App</span>
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
-                  alt="project2"
+                  src={dibtech}
+                  alt="dibtech Website"
                 />
               </div>
               <div className="card-image-overly m-auto mt-3">
                 <span className="card-detail-badge">React JS</span>
+                <span className="card-detail-badge">Tailwind CSS</span>
+                <span className="card-detail-badge">Next JS</span>
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
-                  <h5 className="text-uppercase">Techinfoyt Coding App</h5>
+                  <h5 className="text-uppercase">Dibtech Nepal Website</h5>
                 </div>
                 <a
                   className="ad-btn"
-                  href="https://github.com/techinfo-youtube/ecommerce-app-2023"
+                  href="https://dibtech.com.au/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View
                 </a>
@@ -82,23 +89,26 @@ const Projects = () => {
           <div className="col-md-4">
             <div className="card rounded">
               <div className="card-image">
-                <span className="card-notify-badge">Backend</span>
-                <img
-                  src="https://www.nextwebi.com/assets/img/img-source/mobile-top-banner-28.png"
-                  alt="project1"
-                />
+                <span className="card-notify-badge">Front-End</span>
+                <img src={ecopanel} alt="Nepal Ecopanel Website" />
               </div>
               <div className="card-image-overly m-auto mt-3">
-                <span className="card-detail-badge">Node</span>
-                <span className="card-detail-badge">Express</span>
+                <span className="card-detail-badge">HTMl</span>
+                <span className="card-detail-badge">CSS</span>
+                <span className="card-detail-badge">JavaScript</span>
 
-                <span className="card-detail-badge">NoSQL</span>
+                <span className="card-detail-badge">Bootstrap</span>
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
-                  <h5 className="text-uppercase">Techinfoyt Job Portal</h5>
+                  <h5 className="text-uppercase">Nepal Eco Panel Website</h5>
                 </div>
-                <a className="ad-btn" href="view">
+                <a
+                  className="ad-btn"
+                  href="https://nepalecopanel.com.np/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View
                 </a>
               </div>
