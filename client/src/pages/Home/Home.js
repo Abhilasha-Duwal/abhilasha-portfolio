@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import Typewriter from "typewriter-effect";
-import Resume from "../../assets/docs/resume.txt";
+import Resume from "../../assets/docs/abhilasha.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
 import { motion } from "framer-motion";
@@ -56,14 +56,14 @@ const Home = () => {
         >
           <a
             className="btn btn-hire"
-            href="https://api.whatsapp.com/send?phone=1234567890"
+            href="https://api.whatsapp.com/send?phone=9843159414"
             rel="noreferrer"
             target="_blank"
           >
             Hire Me
           </a>
 
-          <a className="btn btn-cv" href={Resume} download="your_name.pdf">
+          <a className="btn btn-cv" href={Resume} download="Abhilasha_Duwal_CV.pdf">
             My Resume
           </a>
         </motion.div>
