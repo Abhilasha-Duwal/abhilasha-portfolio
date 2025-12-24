@@ -37,7 +37,7 @@ const Projects = () => {
                 <span className="card-detail-badge">Node</span>
                 <span className="card-detail-badge">Express</span>
                 <span className="card-detail-badge">react</span>
-                <span className="card-detail-badge">Mongodb</span>
+                <span className="card-detail-badge">PostgreSQL</span>
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
@@ -57,16 +57,14 @@ const Projects = () => {
           <div className="col-md-4">
             <div className="card rounded">
               <div className="card-image">
-                <span className="card-notify-badge">Mobile App</span>
+                <span className="card-notify-badge">React App</span>
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
                   alt="project2"
                 />
               </div>
               <div className="card-image-overly m-auto mt-3">
-                <span className="card-detail-badge">React Native</span>
-
-                <span className="card-detail-badge">IOS / ANDROID</span>
+                <span className="card-detail-badge">React JS</span>
               </div>
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
